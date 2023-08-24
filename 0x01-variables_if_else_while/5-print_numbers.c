@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: print all single diget number of base 10 foloowed by new line
+ *
+ * Return: 0 (Success)
+*/
+
+int main(void)
+{
+	int i;
+
+	for (i = 0; i < 10; i++)
+	printf("%d\n", i);
+	return (0);
+}

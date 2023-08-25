@@ -26,7 +26,7 @@ int main(void)
 				putchar((fn % 10) + 48);
 				putchar(' ');
 				putchar((sn / 10) + 48);
-				putchar((sn / 10) + 48);
+				putchar((sn % 10) + 48);
 
 				if (fn + sn != 197)
 				{

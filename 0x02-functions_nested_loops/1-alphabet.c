@@ -1,15 +1,19 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - print alphabet with _putchar
  *
- * Description: print alphabets
- *
- * Return: 0 (Succes)
+ * Return: 0 (Success)
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int ch = 'a';
+
+	while (ch <= 'z')
+	{
+		_putchar(ch);
+		ch++;
+	}
+	_putchar('\n');
 }

@@ -4,8 +4,8 @@
  * _islower - cheeck the character is lower case
  * @c: The character well be cheecked
  *
- * Return: 1, if success 
- * 	0 if fail
+ * Return: 1, if success
+ * 0 if fail
 */
 
 int _islower(int c)

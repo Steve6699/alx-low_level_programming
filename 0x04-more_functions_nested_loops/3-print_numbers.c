@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * print_numbers - function print number from 0
+ * to 9
+ *
+ * Description: use _putchar twois in code
+*/
+
+void print_numbers(void)
+{
+	for (int i = 0; i <= 9; i++)
+		_putchar(i + 48);
+	_putchar('\n');
+}

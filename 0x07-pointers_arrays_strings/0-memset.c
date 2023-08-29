@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - file in memory have a contant byte
+ * *_memset - file in memory have a contant byte
  * @s: pointer put contant inside
  * @b: cont
  * @n: max value byte to use

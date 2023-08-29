@@ -15,18 +15,14 @@
 
 int main(void)
 {
-	char f = "Fizz";
-	char b = "Buzz";
-	char fb = "FizzBuzz";
-
 	for (int i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && !(i % 5 == 0))
-			pfintf("%c", f);
+			pfintf("Fizz");
 		else if (i % 5 = 0 && !(i % 3 == 0))
-			printf("%C", b);
+			printf("Buzz");
 		else if (i % 3 == 0 && i % 5 == 0)
-			printf("%c", fb);
+			printf("FizzBuzz");
 		else
 			printf("%d", i);
 		if (i != 100)

@@ -21,15 +21,18 @@ int main(void)
 
 	for (int i = 1; i <= 100; i++)
 	{
-		if ((i != 3 && i % 3 != 0) || (i != 5 && i % 5 != 0))
-			printf("%d ", i);
-		else if (i == 3 || i % 3 == 0)
-			printf("%c ", f);
-		else if (i == 5 || i % 5 == 0)
-			printf("%c ", b);
-		else if (i % 5 == 0 && i % 3 == 0)
-			printf("%c ", fb);
+		if (i % 3 == 0 && !(i % 5 == 0))
+			pfintf("%c", f);
+		else if (i % 5 = 0 && !(i % 3 == 0))
+			printf("%C", b);
+		else if (i % 3 == 0 && i % 5 == 0)
+			printf("%c", fb);
+		else
+			printf("%d", i);
+		if (i != 100)
+			printf(" ");
+		else
+			printf("\n");
 	}
-	printf("\n");
 	return (0);
 }

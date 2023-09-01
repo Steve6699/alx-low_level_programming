@@ -25,7 +25,7 @@ int check_pri(int n, int o)
 {
 	if (o >= n && n > 1)
 		return (1);
-	else if (n % o == 0; || n <= 1)
+	else if (n % o == 0 || n <= 1)
 		return (0);
 	else
 		return (check_pri(n, o + 1));

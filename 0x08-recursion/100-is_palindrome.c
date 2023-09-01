@@ -12,9 +12,9 @@ int l_index(char *s)
 {
 	int last = 0;
 
-	if (*S > '\0')
+	if (*s > '\0')
 	{
-		last += l_index(s + 1) + 1;
+		last += (l_index(s + 1) + 1);
 	}
 	return (last);
 }

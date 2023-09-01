@@ -1,13 +1,13 @@
 #include "main.h"
 
+int is_palindrome(char *s);
+int cheecks(char *s, int st, int e, int m);
 /**
  * l_index - return last index in string
- * @s: pointer to string
+ * @s: pointer to str
  * Return: int
 */
 
-int is_palindrome(char *s);
-int cheecks(char *s, int st, int e, int m);
 int l_index(char *s)
 {
 	int last = 0;
@@ -44,7 +44,7 @@ int is_palindrome(char *s)
 
 int cheecks(char *s, int st, int e, int m)
 {
-	if ((st == e && m != 0) || (st == end + 1 && m == 0))
+	if ((st == e && m != 0) || (st == (end + 1) && m == 0))
 		return (1);
 	else if (s[st] != s[e])
 		return (0);

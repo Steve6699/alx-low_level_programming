@@ -49,5 +49,5 @@ int cheecks(char *s, int st, int e, int m)
 	else if (s[st] != s[e])
 		return (0);
 	else
-		return (cheecks(s, st + 1, e - 1, m))
+		return (cheecks(s, st + 1, e - 1, m));
 }

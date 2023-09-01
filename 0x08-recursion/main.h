@@ -12,5 +12,8 @@ int _sqrt_recursion(int n);
 int square_f(int n, int v);
 int is_prime_number(int n);
 int check_pri(int n, int o);
+int is_palindrome(char *s);
+int cheecks(char *s, int st, int e, int m);
+int l_index(char *s);
 
 #endif

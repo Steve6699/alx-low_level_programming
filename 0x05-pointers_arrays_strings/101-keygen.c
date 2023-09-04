@@ -3,8 +3,8 @@
 #include <time.h>
 
 /**
- * main - generate random password to file
- * Return: 0
+ * main - generates random passwords to 101-crackme
+ * Return: zero
 */
 
 int main(void)

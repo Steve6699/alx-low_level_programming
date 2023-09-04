@@ -11,7 +11,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int c;
+	int c = -1;
 
 	do {
 		c++;

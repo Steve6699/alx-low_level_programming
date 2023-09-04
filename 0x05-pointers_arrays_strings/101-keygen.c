@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - generates random passwords to 101-crackme
+ * main - generates random passwords for 101-crackme
  * Return: zero
 */
 

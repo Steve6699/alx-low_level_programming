@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * *_strncpy - function copy string and put it in

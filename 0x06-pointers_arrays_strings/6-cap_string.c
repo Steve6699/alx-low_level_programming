@@ -39,7 +39,7 @@ int is_del(char c)
 char *cap_string(char *str)
 {
 	char *ptr = str;
-	int fouDel = 1;
+	int fouDel;
 
 	while (*str)
 	{

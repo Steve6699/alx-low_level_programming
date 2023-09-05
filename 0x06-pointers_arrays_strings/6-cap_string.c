@@ -21,7 +21,7 @@ int is_lower(char c)
 int is_del(char c)
 {
 	int i;
-	char del[] = {"\t\n,.!?\"(){}"};
+	char del[] = {" \t\n,.!?\"(){}"};
 
 	for (i = 0; i < 12; i++)
 		if (c == del[i])
@@ -39,7 +39,7 @@ int is_del(char c)
 char *cap_string(char *str)
 {
 	char *ptr = str;
-	int fouDel;
+	int fouDel = 1;
 
 	while (*str)
 	{

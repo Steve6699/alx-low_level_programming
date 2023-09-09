@@ -4,7 +4,7 @@
  * main - print all arg was passed in program
  * evrey arg will print in one line foolowed NL
  * @argc: number of arg
- * @argvv: array of string of arg
+ * @argv: array of string of arg
  * Return: 0 if success
 */
 

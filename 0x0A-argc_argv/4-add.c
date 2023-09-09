@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * main - program that adds positive numbers.
+ * main - program that adds positive numbers
  * @argc: number of arg
  * @argv: array of arg
- * Return: 0 if success, 1 if error
+ * Return: 0 if success
 */
 
 int main(int argc, char *argv[])
 {
-	int sum;
+	int sum = 0;
 	char *a;
 
 	while (--argc)
@@ -21,5 +21,5 @@ int main(int argc, char *argv[])
 		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
-	return (0);	
+	return (0);
 }

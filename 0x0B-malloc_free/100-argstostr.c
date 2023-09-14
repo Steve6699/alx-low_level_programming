@@ -10,7 +10,7 @@ int _strLen(char *c)
 {
 	int i = 0;
 
-	for (; c[i] != '\0'; c++)
+	for (; c[i] != '\0'; i++)
 	;
 
 	return (i);

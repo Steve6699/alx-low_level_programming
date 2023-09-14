@@ -13,9 +13,8 @@ char *_setmemb(char *c, char a, unsigned int x)
 	int *pt = c;
 
 	while (x--)
-	{
 		*c++ = a;
-	}
+
 	return (pt);
 }
 
@@ -34,9 +33,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	s = malloc(sizeof(int) * nmemb);
 
 	if (s == 0)
+	{
 		return (NULL);
-
-	_setmemb(s, 0, sizeof(int) * nmemb);
-
+	}
+	else
+	{
+		_setmemb(s, 0, (sizeof(int) * nmemb));
+	}
 	return (s);
 }

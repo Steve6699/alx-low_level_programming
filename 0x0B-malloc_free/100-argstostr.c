@@ -43,7 +43,7 @@ char *argstostr(int ac, char **av)
 			return (NULL);
 		}
 		else
-		{	
+		{
 			for (i = 0; i < ac; i++)
 			{
 				for (g = 0; av[i][g] != '\0'; g++, cmp++)
@@ -52,7 +52,7 @@ char *argstostr(int ac, char **av)
 				c[cmp] = '\n';
 				cmp++;
 			}
-		}	
+		}
 	}
 	c[cmp] = '\0';
 	return (c);

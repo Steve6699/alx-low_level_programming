@@ -10,7 +10,7 @@
 
 char *_setmemb(char *c, char a, unsigned int x)
 {
-	int *pt = s;
+	int *pt = c;
 
 	while (x--)
 	{

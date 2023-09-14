@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 	int i = 0, g = 0, cn = 0, cmp = 0;
 	char *c;
 
-	if (ac == 0 || av == 0)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (; i < ac; i++, cn++)
@@ -37,10 +37,12 @@ char *argstostr(int ac, char **av)
 
 	if (c == 0)
 		return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
 		for (g = 0; av[i][g] != '\0'; g++, cmp++)
 			c[cmp] = av[i][g];
+
 		c[cmp] = '\n';
 		cmp++;
 	}

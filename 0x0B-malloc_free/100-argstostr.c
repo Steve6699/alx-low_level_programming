@@ -33,22 +33,26 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 	else
-	{	
+	{
 		for (; i < ac; i++, cn++)
 			cn += _strLen(av[i]);
 		c = malloc(sizeof(char) * cn + 1);
 
 		if (c == 0)
-			return (NULL);
-
-		for (i = 0; i < ac; i++)
 		{
-			for (g = 0; av[i][g] != '\0'; g++, cmp++)
-				c[cmp] = av[i][g];
-
-			c[cmp] = '\n';
-			cmp++;
+			return (NULL);
 		}
+		else
+		{	
+			for (i = 0; i < ac; i++)
+			{
+				for (g = 0; av[i][g] != '\0'; g++, cmp++)
+					c[cmp] = av[i][g];
+
+				c[cmp] = '\n';
+				cmp++;
+			}
+		}	
 	}
 	c[cmp] = '\0';
 	return (c);

@@ -1,37 +1,29 @@
-#include <lists.h>
+#include "lists.h"
+#include <stdio.h>
+#include <stddef.h>
 
 /**
- * _strLen - find en of str
- * @x: str
- * Return: int len
-*/
-
-int _strLen(char *x)
-{
-	int s = 0;
-
-	if (!x)
-		return (0);
-	while (*x++)
-		s++;
-	return (s);
-}
-
-/**
- * print_list - pr list
- * @h: pointer
- * Return: size of list
+* print_list - entry point
+*
+* @h: linked list
+*
+* Return: the numers of nodes
 */
 
 size_t print_list(const list_t *h)
 {
-	size_t s = 0;
+	size_t x = 0;
 
-	while (h)
+	while (h != NULL)
 	{
-		printf("[%d] %s\n", _strLen(h->str), h->str ? h->str : "(nil)");
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+		{
+			printf("[%d] %s\n", h->len, h->str);
+		}
 		h = h->next;
-		s++:
+		x++;
 	}
-	return (s);
+	return (x);
 }

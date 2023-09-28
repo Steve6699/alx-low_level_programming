@@ -3,16 +3,16 @@
 #include <stddef.h>
 
 /**
-* print_list - entry point
+* print_list - list
 *
 * @h: linked list
 *
-* Return: the numers of nodes
+* Return: size of list
 */
 
 size_t print_list(const list_t *h)
 {
-	size_t x = 0;
+	size_t a = 0;
 
 	while (h != NULL)
 	{
@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 			printf("[%d] %s\n", h->len, h->str);
 		}
 		h = h->next;
-		x++;
+		a++;
 	}
-	return (x);
+	return (a);
 }

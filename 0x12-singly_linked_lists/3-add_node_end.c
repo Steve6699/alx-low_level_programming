@@ -1,38 +1,38 @@
 #include "lists.h"
 
 /**
-* add_node_end - entry point
+* add_node_end - list
 *
-* @head: head of list
-* @str: string
+* @head: head of linked list
+* @str: str
 *
-* Return: new element
+* Return: n element
 */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newend, *d;
-	size_t l;
+	list_t *newenode, *s;
+	size_t a;
 
-	newend = malloc(sizeof(list_t));
-	if (newend == NULL)
+	newenode = malloc(sizeof(list_t));
+	if (newenode == NULL)
 		return (NULL);
 
-	for (l = 0; str[l] != '\0'; l++)
+	for (a = 0; str[a] != '\0'; a++)
 	;
-	newend->len = l;
+	newenode->len = a;
 
-	newend->str = strdup(str);
+	newenode->str = strdup(str);
 
-	newend->next = NULL;
-	d = *head;
+	newenode->next = NULL;
+	s = *head;
 	if (*head == NULL)
-		*head = newend;
+		*head = newenode;
 	else
 	{
-		while (d->next)
-			d = d->next;
-		d->next = newend;
+		while (s->next)
+			s = s->next;
+		s->next = newenode;
 	}
-	return (newend);
+	return (newenode);
 }

@@ -2,29 +2,29 @@
 #include <stdio.h>
 
 /**
-* add_node - entry point
+* add_node - list
 *
-* @head: head of the linked list
-* @str: string
+* @head: head linked list
+* @str: str
 *
-* Return: new element
+* Return: n element
 */
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_nodes;
-	size_t l;
+	list_t *new_node;
+	size_t a;
 
-	new_nodes = malloc(sizeof(list_t));
+	new_node = malloc(sizeof(list_t));
 
-	if (new_nodes == NULL)
+	if (new_node == NULL)
 		return (NULL);
 
-	for (l = 0; str[l]; l++)
+	for (a = 0; str[a]; a++)
 	;
-	new_nodes->len = l;
-	new_nodes->str = strdup(str);
-	new_nodes->next = *head;
-	*head = new_nodes;
-	return (new_nodes);
+	new_node->len = a;
+	new_node->str = strdup(str);
+	new_node->next = *head;
+	*head = new_node;
+	return (new_node);
 }

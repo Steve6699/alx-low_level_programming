@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 /**
-* list_len - entry point
+* list_len - list
 *
 * @h: linked list
 *
-* Return: numbers of elements in LSs
+* Return: size of list
 */
 
 size_t list_len(const list_t *h)
 {
-	size_t x;
+	size_t a;
 
-	for (x = 0; h != NULL; x++)
+	for (a = 0; h != NULL; a++)
 	{
 		h = h->next;
 	}
-	return (x);
+	return (a);
 }

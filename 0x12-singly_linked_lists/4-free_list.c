@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
-* free_list - entry point
+* free_list - list
 *
-* @head: head of a list
+* @head: head of linked  list
 *
 * Return: void
 */

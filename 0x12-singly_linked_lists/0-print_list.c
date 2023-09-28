@@ -20,7 +20,7 @@ int _strLen(char *x)
 /**
  * print_list - pr list
  * @h: pointer
- * Return: sizt of list
+ * Return: size of list
 */
 
 size_t print_list(const list_t *h)

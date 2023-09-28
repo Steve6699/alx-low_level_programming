@@ -1,20 +1,20 @@
 #include "lists.h"
 
 /**
-* listint_len - entry point
+* listint_len - list
 *
-* @h: list
+* @h: pointer
 *
-* Return: number of elements
+* Return: elements
 */
 
 size_t listint_len(const listint_t *h)
 {
-	size_t b;
+	size_t a;
 
 	for (b = 0; h; b++)
 	{
 		h = h->next;
 	}
-	return (b);
+	return (a);
 }

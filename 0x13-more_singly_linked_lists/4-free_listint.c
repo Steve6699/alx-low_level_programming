@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
-* free_listint - entry point
+* free_listint - list
 *
-* @head: head
+* @head: head list
 *
 * Return: void
 */

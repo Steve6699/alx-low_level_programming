@@ -1,34 +1,34 @@
 #include "lists.h"
 
 /**
-* add_nodeint_end - entry oint
+* add_nodeint_end - list
 *
-* @head: head
-* @n: input
+* @head: head list
+* @n: input n
 *
-* Return: new element
+* Return: element
 */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *f, *m;
+	listint_t *x, *a;
 
-	f = malloc(sizeof(listint_t));
+	x = malloc(sizeof(listint_t));
 
-	if (f == NULL)
+	if (x == NULL)
 		return (NULL);
 
-	f->n = n;
-	f->next = NULL;
+	x->n = n;
+	x->next = NULL;
 
-	m = *head;
+	a = *head;
 	if (*head == NULL)
-		*head = f;
+		*head = x;
 	else
 	{
-		while (m->next)
-			m = m->next;
-		m->next = f;
+		while (a->next)
+			a = a->next;
+		a->next = x;
 	}
-	return (f);
+	return (x);
 }

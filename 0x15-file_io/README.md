@@ -1,1 +1,1 @@
-here we solve all task of project file io
+here we solve tasks of project file io

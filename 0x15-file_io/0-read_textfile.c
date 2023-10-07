@@ -14,10 +14,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char bufs[READ_BUF_SIZE * 8];
 
 	if (!filename || !letters)
-		return (-1);
+		return (0);
 	f = open(filename, O_RDONLY);
 	if (f == -1)
-		return (-1);
+		return (0);
 	byte = read(f, &bufs[0], letters);
 	byte = write(STDOUT_FILENO, &bufs[0], byte);
 	close(f);

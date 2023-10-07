@@ -4,7 +4,6 @@
  * read_textfile - read tet from file and print is
  * @filename: the name of file will be read from
  * @letters: number of letter will be read
- * 
  * Return: byte read or printed
 */
 
